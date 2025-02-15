@@ -50,6 +50,21 @@ webhook_urls = [
     "https://discord.com/api/webhooks/1340457857832714280/2DamneQCfR5s1Ar0PcSbGf5t4-HcvPRzfgTHEj3lKrauSFA89O0sD28szaJTG8pjQKVj",
 
     "https://discord.com/api/webhooks/1340457857283522661/Wf_OuvqAMglsYG0Paurq0GcwigpvduN58yWIbT8z5CVcIuVoyYyIr-bHZHq-FCi5R4iP",
+
+    "https://discord.com/api/webhooks/1340460680280539157/uAHHfZxPHxFTFQ7f_hbLARb36DmgTAvGi115Qb5OwwOlHxL3bbBQLr9vFSv4JvAnGI6C",
+    "https://discord.com/api/webhooks/1340460686840692797/VI623yHbDL9UYlNQOYA6E9iuH_gXAw3GMaHo9aCSzoBkdXqKSNKwu9G9kD3mOb4K5Ac7",
+    "https://discord.com/api/webhooks/1340460697972244592/zpsnHSgdNlmN5M06AOFXuUHvfUSs6uv6GuTYX25uWE7nPpbqO0j0O-GtvQ1daiAdTFIq",
+    "https://discord.com/api/webhooks/1340460698458787882/1AGlEHCQUVDTgylcs_iYjjBCk3XYGCjaBlSPeV1GZa4TBVk9gABoc2FGL0CqkmOfwG2s",
+    "https://discord.com/api/webhooks/1340460698802716774/81t2DgxHJRM6Fgteh0c7MUZ1pUu-Op0KlEKF9hexX73kJj9EJjyEHhvuLx3ukbcy6yjk",
+    "https://discord.com/api/webhooks/1340460699411021976/B6puXxdQzZVWFCmnosVBVHJz4V8RdOJ-c8hc-gGu-Bhzo1vKg8R9tSfH0Zof0czBw2Ub",
+    "https://discord.com/api/webhooks/1340460699540787272/W4C-cv5FNaz853w8FQp9IzUgZCMIn0GeLMCF98OCs5xNF28qDoic7OX5Ybfrgr_C3oRW",
+    "https://discord.com/api/webhooks/1340460700744679549/v9wM44RWUGe8H4rNjNUxfL-QetB63S3LXydB-7Sw7hP8j_K1ApAsrFGdb9ZMYwtxZak3",
+    "https://discord.com/api/webhooks/1340460701336080384/AxgX_VaV27CH23b821xV5Tm_zwQB-ZRdH3MPJQGfIvdnp72ZOH94PATcix--_I_1Mggg",
+    "https://discord.com/api/webhooks/1340460701449453650/iAdbc9Jl5VS5DAKvtPTHdcWya43lKrMs17UxI54WL_17SnQlr_ZeQu3ZQWjXep5raQLj",
+    "https://discord.com/api/webhooks/1340460702485188698/jRRS_b__CQj6L7AcHx7wIqQY3UDMKEADDL-wxokVccX167SfW8cZ_j-88xDA7ewXBg1p",
+    "https://discord.com/api/webhooks/1340460702682583070/mZiEcEUGgiX2RYML7tlxAfFbnpsYTqINTC7ZiASp7I23ZjwuOuzyMO9igrb4F7mZLD0R",
+    "https://discord.com/api/webhooks/1340460702950887586/bbPAuxnHYABRRwR-2j7cVS5MMMeKM02_PlMZM68RNve4ccXPOZ5zULH7hv4EodWLthTb",
+    "https://discord.com/api/webhooks/1340460703429034057/be-u-FpN7n86GtH7HWnLFRjYYhNlcKVNlvb_d8puPGcKBZswdK9Tj2IAoMSttUYa3px5",
 ]
 
 def send_message(webhook, message):
