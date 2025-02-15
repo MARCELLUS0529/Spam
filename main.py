@@ -2,10 +2,8 @@ import time
 import requests
 import threading
 
-# The message to send
-message = "@everyone"  # Mention yourself
+message = "@everyone"
 
-# New list of webhooks
 webhook_urls = [
     "https://discord.com/api/webhooks/1336947213817090139/2BByVLW9WO0HhcHSgRHJOz7rL0S2UNOGNDJ2BqJEqNEfiDj2ADapZGyA-UfDv7hyWfY_",
     "https://discord.com/api/webhooks/1336950310874120222/xO3BJIC7jmCFzA2Vyxd9gSBWxCg5dHC5YZyAX8wduibi0jezBi7FFINNMRSF0xImKfE9",
@@ -54,12 +52,11 @@ webhook_urls = [
     "https://discord.com/api/webhooks/1337441998738690109/aiTR_hKMD_Wr72Y4U844_r2vzH62-AJSSQPAQDYMi1caqF_vYyjyxU-X55E1vVn4GOU_",
 ]
 
-# Function to send the message
 def send_message(webhook, message):
     payload = {"content": message}
     try:
         response = requests.post(webhook, json=payload)
-        if response.status_code == 429:  # Rate limited
+        if response.status_code == 429:
             print(f"Rate limited on {webhook}, retrying...")
             return False
         elif response.status_code != 204:
@@ -72,23 +69,19 @@ def send_message(webhook, message):
         print(f"Request failed: {e}")
         return False
 
-# Function to send messages to all webhooks simultaneously
 def send_messages():
     threads = []
     for webhook in webhook_urls:
         thread = threading.Thread(target=send_message, args=(webhook, message))
         thread.start()
         threads.append(thread)
-
-    # Wait for all threads to finish
     for thread in threads:
         thread.join()
 
-# Main function to send messages every second
 def main():
     while True:
-        send_messages()  # Send all webhooks at the same time
-        time.sleep(2)  # Wait 1 second before sending again
+        send_messages()
+        time.sleep(2)
 
 if __name__ == "__main__":
     main()
